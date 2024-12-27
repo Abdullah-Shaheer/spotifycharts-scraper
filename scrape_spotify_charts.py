@@ -115,10 +115,10 @@ for view in views:
 
         df2 = pd.DataFrame(albums_data)
         df2.to_excel('Top_Global_Albums.xlsx', index=False)
-        df2.to_csv('Top_Global_Songs_Highlights.csv', index=False)
+        df2.to_csv('Top_Global_Albums.csv', index=False)
         df3 = pd.DataFrame(highlights_albums)
         df3.to_excel('Top_Global_Albums_Highlights.xlsx', index=False)
-        df3.to_csv('Top_Global_Songs_Highlights.csv', index=False)
+        df3.to_csv('Top_Global_Albums_Highlights.csv', index=False)
 
     elif title == title_artists:
         entries = view.get("entries")
@@ -146,8 +146,8 @@ for view in views:
                                  'Photo URL': image_url})
         df4 = pd.DataFrame(artists_data)
         df4.to_excel('Top_Global_Artists.xlsx', index=False)
-        df4.to_csv('Top_Global_Songs_Highlights.csv', index=False)
+        df4.to_csv('Top_Global_Artists.csv', index=False)
         df8 = pd.DataFrame(highlights_artists)
         df8.to_excel('Top_Global_Artists_Highlights.xlsx', index=False)
-        df8.to_csv('Top_Global_Songs_Highlights.csv', index=False)
+        df8.to_csv('Top_Global_Artists_Highlights.csv', index=False)
 print('Scraped the top songs, top albums, and top artists of the week on spotify charts!')
