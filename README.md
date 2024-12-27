@@ -72,7 +72,7 @@ For songs, albums, and artists:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/spotify-charts-scraper.git
+   git clone https://github.com/Abdullah-Shaheer/spotify-charts-scraper.git
    cd spotify-charts-scraper
    ```
 
